@@ -19,6 +19,7 @@ can guide you through the process.
 
 The sources for {{ cookiecutter.project_name }} can be downloaded from the [Github repo]({{ cookiecutter.git_https_upstream }}).
 
+<!-- prettier-ignore-start -->
 You can either clone the public repository:
 {% if cookiecutter.git_https_upstream != "" %}
 
@@ -45,3 +46,4 @@ Once you have a copy of the source, you can install it with:
 ```bash
 poetry install
 ```
+<!-- prettier-ignore-end -->
