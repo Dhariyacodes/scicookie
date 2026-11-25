@@ -44,12 +44,11 @@ mkdocs = ">=1.3.1"
 mkdocs-include-exclude-files = ">=0.0.1"
 mkdocs-jupyter = ">=0.24.7"
 mkdocs-material = ">=9.4"
-mkdocstrings = { version = ">=1.0.7", extras = ["python"] }
+mkdocstrings = { version = ">=1", extras = ["python"] }
 mkdocs-macros-plugin = ">=1.5.0"
 mkdocs-gen-files = ">=0.6.0"
 pymdown-extensions = ">=9.5"
 makim = "1.27.0"
-click = ">=8.1"
 pexpect = ">=4.9.0"
 ensureconda = ">=1.4"
 
