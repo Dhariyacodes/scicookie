@@ -47,6 +47,7 @@ dev = [
 {%- endif -%}
 {%- if cookiecutter.use_makim == "yes" %}
   "makim == 1.27.0",
+  "click >= 8.1",
 {%- endif -%}
 {%- if cookiecutter.use_vulture == "yes" %}
   "vulture >= 2.7",
@@ -67,7 +68,7 @@ dev = [
   "mkdocs-jupyter >= 0.24.1",
   "mkdocs-literate-nav >= 0.6.0",
   "mkdocs-macros-plugin >= 1.5.0",
-  "mkdocstrings[python] >= 1",
+  "mkdocstrings[python] >= 1.0.7",
   "mkdocs-gen-files >=0.6.0",
   {% if cookiecutter.mkdocs_theme == 'material' -%}
   "mkdocs-material >= 9.4",
@@ -96,6 +97,7 @@ dev = [
 {%- elif cookiecutter.documentation_engine == 'quarto' %}
   "quarto-cli >= 1.5.56",
   "quartodoc >= 0.7.5",
+  "griffe < 2",
 {%- endif -%}
   # 'PosixPath' object has no attribute 'endswith'
   "virtualenv>=20.34",
