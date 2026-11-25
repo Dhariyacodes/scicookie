@@ -1,6 +1,8 @@
 ---
 default_stages:
   - pre-commit
+default_language_version:
+  node: "22.11.0"
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -62,9 +64,9 @@ repos:
       - id: ruff check
         name: ruff check
         entry: ruff check
+        files: "./"
         language: system
         pass_filenames: true
-        files: "./"
         # pre-commit + ruff doesn't honor the exclusion defined in the config
         exclude: |
           (?x)(
