@@ -103,10 +103,7 @@ mkdocs-material = ">=9.1.15"
 {% elif cookiecutter.mkdocs_theme == "cinder" -%}
 mkdocs-cinder = ">=1.2.0"
 {% endif -%}
-mkdocstrings = [
-  { version = ">=1.0.7", extras = ["python"], python = ">=3.11" },
-  { version = ">=0.27.0,<1.0", extras = ["python"], python = ">=3.10,<3.11" },
-]
+mkdocstrings = { version = ">=0.27.0", extras = ["python"] }
 mkdocs-gen-files = ">=0.6.0"
 {# keep this line here #}
 {%- elif cookiecutter.documentation_engine.startswith("sphinx") %}
